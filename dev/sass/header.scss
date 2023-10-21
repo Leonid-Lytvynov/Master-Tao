@@ -1,8 +1,63 @@
-header{
-	height: 7vh;
-	padding: 15px 0;
-	background: #222;
-	a {
-		color: #fff;
+header {
+
+
+	.navbar {
+		padding-top: 25px;
+		padding-bottom: 39px;
+
+		.container {
+			max-width: 1170px;
+
+			.navbar-brand {
+				padding-left: 3px;
+				padding-top: 0px;
+				padding-bottom: 0px;
+				margin-right: 0px;
+			}
+
+			.navbar-collapse {
+				.navbar-nav {
+					max-width: 613px;
+					width: 100%;
+					margin: 0 auto;
+					justify-content: space-between;
+
+					a {
+						margin-top: 6px;
+						padding-right: 7px;
+						padding-left: 4px;
+						line-height: 146%;
+						color: $text-color;
+
+						/* 23.36px */
+						&:hover {
+							color: $color-secondary;
+						}
+					}
+				}
+
+			}
+
+			.nav-btn {
+				margin-right: 3px;
+				padding: 14px 27px;
+				text-align: center;
+				font-size: 15px;
+				font-weight: 600;
+				line-height: 146%;
+				/* 21.9px */
+				color: $text-color;
+				cursor: pointer;
+				border-radius: 90px;
+				background: $color-primary;
+				border: none;
+				transition: all 0.15s;
+
+				&:hover {
+					background-color: $color-secondary;
+				}
+			}
+
+		}
 	}
 }
