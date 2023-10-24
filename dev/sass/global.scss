@@ -3,3 +3,119 @@ body {
    background-color: $bg-primary;
    font-family: $font-primary;
 }
+
+.home {
+   margin-bottom: 100px;
+}
+
+.container {
+   max-width: 1170px;
+   padding-right: 15px;
+   padding-left: 15px;
+   margin-right: auto;
+   margin-left: auto;
+}
+
+.container-xxl {
+   max-width: 1850px;
+   position: relative;
+}
+
+.btn-primary {
+   background-color: $color-primary;
+   border-color: $color-primary;
+
+   &:hover {
+      background-color: $color-secondary;
+      border-color: $color-secondary ;
+   }
+}
+
+:not(.btn-check)+.btn:active {
+   background-color: $color-secondary;
+   border-color: $color-secondary;
+}
+
+.btn {
+   display: inline-flex;
+   align-items: center;
+   border-radius: 90px;
+   color: #fff;
+   font-weight: 600;
+   line-height: 146%;
+   cursor: pointer;
+
+
+   &:focus-visible {
+      background-color: $color-secondary ;
+      border-color: $color-secondary ;
+      box-shadow: none;
+   }
+
+   &:hover .icon,
+   &:focus-visible .icon {
+      filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(49deg) brightness(180%) contrast(101%);
+   }
+
+   .icon {
+      width: 27px;
+      height: 27px;
+      margin: 0 -14px 0 47px;
+   }
+}
+
+
+.slick-dots {
+   margin: 0;
+   padding: 0;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+
+   li {
+      list-style-type: none;
+      height: 8px;
+      margin: 0 13px;
+      font-size: 0;
+
+      &.slick-active {
+         background-color: #fff;
+         border-radius: 50%;
+      }
+   }
+
+   button {
+      border-radius: 50%;
+      height: 8px;
+      width: 8px;
+      padding: 0px;
+      border: 2px solid #fff;
+      background: transparent;
+      outline: none;
+   }
+}
+
+.slick-arrow {
+   width: 92px;
+   height: 92px;
+   font-size: 0;
+   border: none;
+   background-image: url(assets/img/icon-slick-arrow.svg);
+   background-color: transparent;
+   background-repeat: no-repeat;
+   background-position: center;
+}
+
+.slick-prev {
+   transform: rotate(180deg);
+
+   &:hover {
+      background-image: url(assets/img/icon-slick-arrow-hover.svg);
+      transform: rotate(0deg);
+   }
+}
+
+.slick-next:hover {
+   background-image: url(assets/img/icon-slick-arrow-hover.svg);
+   transform: rotate(180deg);
+}

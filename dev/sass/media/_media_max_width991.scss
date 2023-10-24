@@ -1,0 +1,63 @@
+@media screen and (max-width: 991px) {
+   header {
+      .navbar {
+         padding-top: 18px;
+         padding-bottom: 18px;
+
+         .container {
+            padding-left: 20px;
+            padding-right: 20px;
+
+            .navbar-brand {
+               max-width: 126px;
+               padding-left: 0px;
+               margin-bottom: 18px;
+
+               svg {
+                  width: 100%;
+                  height: auto;
+               }
+            }
+
+            .navbar-toggler:focus {
+               box-shadow: none;
+            }
+
+            .navbar-toggler-icon {
+               background-image: none;
+            }
+
+            .navbar-collapse {
+               text-align: center;
+               background: #363A4D;
+               margin: 0 -20px;
+
+               .navbar-nav {
+
+                  padding-left: 0;
+                  max-width: none;
+                  width: 100%;
+                  padding-top: 37px;
+                  padding-bottom: 22px;
+
+                  .nav-link {
+                     padding: 0;
+                     margin-bottom: 11px;
+                     margin-top: 0;
+                     font-size: 24px;
+                     line-height: 222%;
+                  }
+               }
+
+               .nav-btn {
+                  padding: 22px 85px;
+                  margin: 0;
+                  font-size: 16px;
+                  margin-bottom: 60px;
+               }
+            }
+
+         }
+      }
+   }
+}

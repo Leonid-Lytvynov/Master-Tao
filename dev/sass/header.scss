@@ -6,7 +6,8 @@ header {
 		padding-bottom: 39px;
 
 		.container {
-			max-width: 1170px;
+			padding-left: 12px;
+			padding-right: 12px;
 
 			.navbar-brand {
 				padding-left: 3px;
@@ -43,19 +44,8 @@ header {
 				padding: 14px 27px;
 				text-align: center;
 				font-size: 15px;
-				font-weight: 600;
-				line-height: 146%;
-				/* 21.9px */
 				color: $text-color;
-				cursor: pointer;
-				border-radius: 90px;
-				background: $color-primary;
 				border: none;
-				transition: all 0.15s;
-
-				&:hover {
-					background-color: $color-secondary;
-				}
 			}
 
 		}

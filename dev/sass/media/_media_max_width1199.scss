@@ -1,2 +1,14 @@
 @media screen and (max-width: 1199px) {
+   header {
+      .navbar {
+         .container {
+            .navbar-collapse {
+               .navbar-nav {
+                  padding-left: 20px;
+                  max-width: 602px;
+               }
+            }
+         }
+      }
+   }
 }
