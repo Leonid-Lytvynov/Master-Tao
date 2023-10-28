@@ -8,9 +8,8 @@ $(document).ready(function () {
             breakpoint: 991,
             settings: {
                arrows: false,
-               dots: true
             }
-         }
+         },
       ]
    });
 });
