@@ -1,1 +1,7 @@
-@media (min-width: 992px) {}
+@media (min-width: 992px) {
+   .first-screen-slider {
+      .slick-slider {
+         padding: 0 92px;
+      }
+   }
+}

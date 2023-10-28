@@ -2,7 +2,7 @@
    header {
       .navbar {
          padding-top: 18px;
-         padding-bottom: 18px;
+         padding-bottom: 0;
 
          .container {
             padding-left: 20px;
@@ -57,6 +57,26 @@
                }
             }
 
+         }
+      }
+   }
+
+   .first-screen-slider {
+      .slick-slider {
+         height: calc(100vh - 72px);
+
+         .container {
+            .first-screen-title {
+               margin-bottom: 10px;
+               font-size: 32px;
+               max-width: 295px;
+            }
+
+            .first-screen-subtitle {
+               margin-bottom: 18px;
+               font-size: 16px;
+               max-width: 275px;
+            }
          }
       }
    }

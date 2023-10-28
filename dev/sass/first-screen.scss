@@ -1,71 +1,64 @@
-.container-xxl {
-    .first-screen-slider {
-        .slick-slide {
-            border-radius: 20px;
-            background-size: cover;
-            background-repeat: no-repeat;
+.first-screen-slider {
+    .slick-slider {
 
-            .container {
-                padding-top: 165px;
-                padding-bottom: 228px;
+        background-size: cover;
+        background-repeat: no-repeat;
 
-                .first-screen-title {
-                    max-width: 463px;
-                    font-size: 56px;
-                    font-weight: 700;
-                    line-height: 126%;
-                    text-transform: uppercase;
-                    margin-bottom: 8px;
-                }
-
-                .first-screen-mb {
-                    margin-bottom: 99px;
-                }
-
-                .first-screen-subtitle {
-                    max-width: 345px;
-                    font-size: 20px;
-                    font-weight: 300;
-                    line-height: 135.5%;
-                    margin-bottom: 37px;
-                }
-
-                .first-screen-btn {
-                    display: inline-flex;
-                    align-items: center;
-                    justify-content: space-between;
-                    padding: 19px 33px;
-                    font-size: 16px;
-                    width: 100%;
-                    max-width: 293px;
-                }
-            }
+        .first-screen-title {
+            max-width: 463px;
+            font-size: 56px;
+            font-weight: 700;
+            line-height: 126%;
+            text-transform: uppercase;
+            margin-bottom: 8px;
         }
 
-        .slick-dots {
-            position: absolute;
-            left: 50%;
-            bottom: 43px;
-            transform: translate(-50%, 0);
+        .first-screen-mb {
+            margin-bottom: 99px;
+        }
+
+        .first-screen-subtitle {
+            max-width: 345px;
+            font-size: 20px;
+            font-weight: 300;
+            line-height: 135.5%;
+            margin-bottom: 37px;
+        }
+
+        .first-screen-btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 19px 33px;
+            font-size: 16px;
+            width: 100%;
+            max-width: 293px;
         }
     }
+}
 
-    .first-screen-nav {
-        max-width: 1570px;
+.slick-dots {
+    position: absolute;
+    left: 50%;
+    bottom: 43px;
+    transform: translate(-50%, 0);
+}
 
-        .slick-arrow {
-            background-image: url(assets/img/icon-slick-arrow.svg);
-        }
 
-        .slick-prev {
-            &:hover {
-                background-image: url(assets/img/icon-slick-arrow-hover.svg);
-            }
-        }
+.first-screen-nav {
+    max-width: 1570px;
 
-        .slick-next:hover {
+    .slick-arrow {
+        background-image: url(assets/img/icon-slick-arrow.svg);
+    }
+
+    .slick-prev {
+        &:hover {
             background-image: url(assets/img/icon-slick-arrow-hover.svg);
         }
     }
 
+    .slick-next:hover {
+        background-image: url(assets/img/icon-slick-arrow-hover.svg);
+    }
 }
