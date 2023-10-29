@@ -85,6 +85,10 @@
       .calculation-title {
          font-size: 24px;
          max-width: 390px;
+
+         &::after {
+            top: 127%;
+         }
       }
 
       .calculation-form {
