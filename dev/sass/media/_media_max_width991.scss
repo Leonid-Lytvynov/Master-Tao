@@ -80,4 +80,20 @@
          }
       }
    }
+
+   .calculation {
+      .calculation-title {
+         font-size: 24px;
+         max-width: 390px;
+      }
+
+      .calculation-form {
+         margin: 0 auto;
+
+      }
+
+      .calculation-decoration {
+         display: none;
+      }
+   }
 }

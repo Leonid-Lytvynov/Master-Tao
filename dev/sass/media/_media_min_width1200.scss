@@ -9,4 +9,13 @@
          padding-bottom: 228px;
       }
    }
+
+   .calculation {
+      .calculation-title {
+         &::after {
+            margin-left: 20px;
+            margin-bottom: 10px;
+         }
+      }
+   }
 }

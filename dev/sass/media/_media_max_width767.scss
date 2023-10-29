@@ -1,3 +1,33 @@
 @media screen and (max-width: 767px) {
+   .calculation {
+      .calculation-title {
+         margin-bottom: 82px;
+      }
 
+      .calculation-form {
+         padding: 50px 15px;
+         max-width: 335px;
+      }
+
+      .calculation-row {
+         flex-direction: column;
+
+         .has-checkbox {
+            padding-top: 3px;
+         }
+
+         .file-name {
+            p {
+               margin-top: 0px;
+               margin-bottom: 11px;
+            }
+         }
+      }
+
+      .btn {
+         .icon {
+            margin-left: auto;
+         }
+      }
+   }
 }

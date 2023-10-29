@@ -32,6 +32,10 @@ body {
    }
 }
 
+.btn-check:checked+.btn,
+.btn.active,
+.btn.show,
+.btn:first-child:active,
 :not(.btn-check)+.btn:active {
    background-color: $color-secondary;
    border-color: $color-secondary;
@@ -127,4 +131,65 @@ body {
 
 .slick-next:hover {
    transform: rotate(180deg);
+}
+
+label {
+   cursor: pointer;
+}
+
+input {
+   border: none;
+}
+
+input:focus-visible {
+   outline: none;
+}
+
+
+[type="checkbox"],
+[type="radio"] {
+   display: none;
+}
+
+[type="checkbox"]+label,
+[type="radio"]+label {
+   display: flex;
+   align-items: center;
+}
+
+[type="checkbox"]+label::before {
+   content: "";
+   width: 24px;
+   height: 24px;
+   display: block;
+   margin-right: 9px;
+   background-color: #fff;
+   border-radius: 4px;
+   border: 1px solid #282B38;
+}
+
+[type="radio"]+label::before {
+   content: "";
+   width: 24px;
+   height: 24px;
+   display: block;
+   margin-right: 9px;
+   background-color: #fff;
+   border-radius: 50%;
+}
+
+[type="checkbox"]:checked+label::before {
+   background-image: url(assets/img/checkbox-checked.svg);
+   background-repeat: no-repeat;
+   background-position: center;
+}
+
+[type="radio"]:checked+label::before {
+   background-image: url(assets/img/radio-checked.svg);
+   background-repeat: no-repeat;
+   background-position: center;
+}
+
+label:hover::before {
+   border: 1px solid orange;
 }

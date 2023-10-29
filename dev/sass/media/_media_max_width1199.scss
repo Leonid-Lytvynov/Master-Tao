@@ -10,6 +10,10 @@
       }
    }
 
+   .first-screen {
+      margin-bottom: 56px;
+   }
+
    .container-xxl {
       padding: 0;
    }
@@ -44,6 +48,27 @@
 
       .slick-dots {
          bottom: 43px;
+      }
+   }
+
+   .calculation {
+      .calculation-title {
+         font-size: 36px;
+         text-align: center;
+         margin: 0 auto 59px;
+         max-width: 440px;
+         position: relative;
+
+         &::after {
+            position: absolute;
+            top: 127%;
+            left: 50%;
+            transform: translate(-50%, 0%);
+         }
+      }
+
+      .calculation-decoration {
+         max-width: 38vw;
       }
    }
 
