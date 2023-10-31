@@ -82,12 +82,16 @@
    }
 
    .calculation {
-      .calculation-title {
-         font-size: 24px;
-         max-width: 390px;
+      .tamplate-title {
+         margin-bottom: 82px;
+
+         .calculation-title {
+            font-size: 24px;
+            max-width: 390px;
+         }
 
          &::after {
-            top: 127%;
+            top: calc(127% - 2px);
          }
       }
 

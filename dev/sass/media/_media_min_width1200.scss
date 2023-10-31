@@ -13,8 +13,12 @@
    .calculation {
       .calculation-title {
          &::after {
-            margin-left: 20px;
-            margin-bottom: 10px;
+            content: "";
+            display: inline-block;
+            width: 85px;
+            height: 2px;
+            background-color: $color-secondary;
+            margin: 10px 20px;
          }
       }
    }

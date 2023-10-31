@@ -7,14 +7,6 @@
       line-height: 124.5%;
       text-transform: uppercase;
       margin-bottom: 59px;
-
-      &::after {
-         content: "";
-         display: inline-block;
-         width: 85px;
-         height: 2px;
-         background-color: $color-secondary;
-      }
    }
 
    .calculation-form {
