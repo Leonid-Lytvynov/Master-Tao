@@ -83,15 +83,11 @@
 
    .calculation {
       .tamplate-title {
-         margin-bottom: 82px;
+         margin-bottom: 56px;
 
          .calculation-title {
             font-size: 24px;
             max-width: 390px;
-         }
-
-         &::after {
-            top: calc(127% - 2px);
          }
       }
 

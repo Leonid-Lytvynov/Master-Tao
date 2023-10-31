@@ -53,19 +53,11 @@
 
    .calculation {
       .tamplate-title {
-         margin: 0 auto 59px;
-         position: relative;
+         margin: 0 auto 36px;
+         padding-bottom: 26px;
 
          &::after {
-            content: "";
-            display: inline-block;
-            width: 85px;
-            height: 2px;
             background-color: $color-secondary;
-            position: absolute;
-            left: 50%;
-            top: calc(115% - 2px);
-            transform: translate(-50%, 0);
          }
 
          .calculation-title {

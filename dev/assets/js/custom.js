@@ -28,6 +28,7 @@ document.getElementById('fileInput').onchange = function () {
 const checkButton = document.querySelectorAll('[type="checkbox"]');
 
 checkButton.forEach((item, index) => {
+   item.closest('.calculation-column').classList.add('calculation-column__margin');
    index === 0 ? item.closest('.input-box').classList.add('has-checkbox') : null
 
 });

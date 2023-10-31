@@ -193,3 +193,18 @@ input:focus-visible {
 label:hover::before {
    border: 1px solid orange;
 }
+
+.tamplate-title {
+   position: relative;
+
+   &::after {
+      content: "";
+      display: inline-block;
+      width: 85px;
+      height: 2px;
+      position: absolute;
+      left: 50%;
+      top: calc(100% - 2px);
+      transform: translate(-50%, 0);
+   }
+}

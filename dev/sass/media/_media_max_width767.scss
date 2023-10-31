@@ -12,6 +12,10 @@
       .calculation-row {
          flex-direction: column;
 
+         .calculation-column__margin {
+            margin-top: -8px;
+         }
+
          .has-checkbox {
             padding-top: 3px;
          }
@@ -19,7 +23,7 @@
          .file-name {
             p {
                margin-top: 0px;
-               margin-bottom: 11px;
+               margin-bottom: 12px;
             }
          }
       }
