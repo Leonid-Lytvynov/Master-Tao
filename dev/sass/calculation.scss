@@ -2,10 +2,6 @@
    margin-bottom: 113px;
 
    .calculation-title {
-      font-size: 36px;
-      font-weight: 700;
-      line-height: 124.5%;
-      text-transform: uppercase;
       margin-bottom: 59px;
    }
 
@@ -44,18 +40,10 @@
             line-height: 126%;
             border-radius: 10px;
             background: #FFF;
-            transition: 1.5s;
+            transition: .3s;
 
             &::placeholder {
                color: #CBCBCB;
-            }
-
-            &:active {
-               background-color: #000;
-            }
-
-            &:focus-visible {
-               outline: 1px solid orange;
             }
          }
 

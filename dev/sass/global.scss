@@ -146,6 +146,16 @@ input:focus-visible {
 }
 
 
+
+input:hover {
+   box-shadow: 0 0 4px 2px orange;
+}
+
+input:focus-visible,
+input:focus {
+   box-shadow: 0 0 4px 2px $color-secondary;
+}
+
 [type="checkbox"],
 [type="radio"] {
    display: none;
@@ -196,6 +206,13 @@ label:hover::before {
 
 .tamplate-title {
    position: relative;
+
+   h2 {
+      font-size: 36px;
+      font-weight: 700;
+      line-height: 124.5%;
+      text-transform: uppercase;
+   }
 
    &::after {
       content: "";

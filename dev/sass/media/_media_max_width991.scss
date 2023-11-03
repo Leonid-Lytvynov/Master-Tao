@@ -82,6 +82,8 @@
    }
 
    .calculation {
+      margin-bottom: 60px;
+
       .tamplate-title {
          margin-bottom: 56px;
 
@@ -98,6 +100,29 @@
 
       .calculation-decoration {
          display: none;
+      }
+   }
+
+   .advantages {
+      padding: 55px 0 68px;
+
+      &::before {
+         left: 0;
+         right: 0;
+         border-radius: 0px;
+      }
+
+      .tamplate-title {
+         margin-bottom: 44px;
+         padding-bottom: 16px;
+
+         h2 {
+            font-size: 24px;
+         }
+      }
+
+      .slick-dots {
+         bottom: -8px;
       }
    }
 }
