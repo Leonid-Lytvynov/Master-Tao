@@ -4,106 +4,105 @@
    .calculation-title {
       margin-bottom: 59px;
    }
+}
 
-   .calculation-form {
-      padding: 50px 35px;
-      background-color: #363A4D;
-      width: 100%;
-      max-width: 626px;
-      border-radius: 20px;
-   }
+.calculation-form {
+   padding: 50px 35px;
+   background-color: #363A4D;
+   width: 100%;
+   max-width: 626px;
+   border-radius: 20px;
+}
 
-   .calculation-row {
-      display: flex;
-   }
+.calculation-row {
+   display: flex;
+}
 
-   .calculation-column {
+.calculation-column {
+   display: flex;
+   flex-direction: column;
+   width: 100%;
+
+   .input-box {
       display: flex;
       flex-direction: column;
+      margin: 0 15px 20px;
+
+      label {
+         font-size: 15px;
+         font-weight: 600;
+         line-height: 126%;
+         margin-bottom: 6px;
+      }
+
+      input {
+         padding: 19px 20px;
+         font-size: 15px;
+         line-height: 126%;
+         border-radius: 10px;
+         background: #FFF;
+         transition: .3s;
+
+         &::placeholder {
+            color: #CBCBCB;
+         }
+      }
+
+      [for="fileInput"] {
+         padding: 11px 20px;
+         font-weight: 400;
+         background-color: transparent;
+         border-radius: 10px;
+         border: 1px dashed rgba(255, 255, 255, 0.26);
+         text-align: center;
+         margin-bottom: 6px;
+         cursor: pointer;
+         transition: 0.3s;
+
+         &:hover {
+            border: 1px dashed $color-secondary;
+            color: $color-secondary;
+         }
+      }
+
+      [type="file"] {
+         display: none;
+      }
+   }
+
+   .has-checkbox {
+      padding-top: 19px;
+      margin-bottom: 8px;
+   }
+
+   .file-name {
+      p {
+         padding: 0 15px;
+         font-size: 15px;
+         line-height: 126%;
+         margin-top: 6px;
+         margin-bottom: 14px;
+      }
+   }
+}
+
+
+
+.calculation-btn {
+   padding: 20px 36px 20px 33px;
+   margin-left: 15px;
+   margin-bottom: 11px;
+}
+
+.calculation-decoration {
+   position: absolute;
+   bottom: -113px;
+   right: 0;
+
+   img {
+      max-width: 560px;
+      max-height: 888px;
       width: 100%;
-
-      .input-box {
-         display: flex;
-         flex-direction: column;
-         margin: 0 15px 20px;
-
-         label {
-            font-size: 15px;
-            font-weight: 600;
-            line-height: 126%;
-            margin-bottom: 6px;
-         }
-
-         input {
-            padding: 19px 20px;
-            font-size: 15px;
-            line-height: 126%;
-            border-radius: 10px;
-            background: #FFF;
-            transition: .3s;
-
-            &::placeholder {
-               color: #CBCBCB;
-            }
-         }
-
-         [for="fileInput"] {
-            padding: 11px 20px;
-            font-weight: 400;
-            background-color: transparent;
-            border-radius: 10px;
-            border: 1px dashed rgba(255, 255, 255, 0.26);
-            text-align: center;
-            margin-bottom: 6px;
-            cursor: pointer;
-            transition: 0.3s;
-
-            &:hover {
-               border: 1px dashed $color-secondary;
-               color: $color-secondary;
-            }
-         }
-
-         [type="file"] {
-            display: none;
-         }
-      }
-
-      .has-checkbox {
-         padding-top: 19px;
-         margin-bottom: 8px;
-      }
-
-      .file-name {
-         p {
-            padding: 0 15px;
-            font-size: 15px;
-            line-height: 126%;
-            margin-top: 6px;
-            margin-bottom: 14px;
-         }
-      }
+      height: auto;
    }
-
-
-
-   .calculation-btn {
-      padding: 20px 36px 20px 33px;
-      margin-left: 15px;
-      margin-bottom: 11px;
-   }
-
-   .calculation-decoration {
-      position: absolute;
-      bottom: -113px;
-      right: 0;
-
-      img {
-         max-width: 560px;
-         max-height: 888px;
-         width: 100%;
-         height: auto;
-      }
-   }
-
 }

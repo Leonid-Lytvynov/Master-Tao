@@ -34,4 +34,49 @@
          }
       }
    }
+
+   .delivery {
+      .delivery-slider {
+         max-width: 365px;
+      }
+
+      .slick-dots {
+         bottom: -40px;
+      }
+   }
+
+   .slide-card {
+      max-width: 335px;
+      padding: 0 23px 26px;
+      margin: 0px;
+
+      .img-box {
+         img {
+            width: calc(100% + 46px);
+            margin: 0 -23px 27px;
+         }
+      }
+
+      .card-title {
+         margin-bottom: 10px;
+      }
+
+      .card-options {
+         margin-bottom: 6px;
+      }
+
+      .card-price {
+         margin-bottom: 19px;
+      }
+
+      .card-btn-row {
+         .card-btn {
+            padding: 13px 10px;
+         }
+
+         .transparent-btn {
+            padding: 13px 26px;
+         }
+      }
+   }
 }

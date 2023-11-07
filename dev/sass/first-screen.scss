@@ -39,27 +39,24 @@
             max-width: 293px;
         }
     }
+
+    .slick-dots {
+        bottom: 43px;
+    }
 }
 
-.slick-dots {
-    position: absolute;
-    left: 50%;
-    bottom: 43px;
-    transform: translate(-50%, 0);
-}
+
 
 
 .first-screen-nav {
     max-width: 1570px;
 
     .slick-arrow {
-        background-image: url(assets/img/icon-slick-arrow.svg);
+        background-image: url(assets/img/icon-first-screen-arrow.svg);
     }
 
-    .slick-prev {
-        &:hover {
-            background-image: url(assets/img/icon-slick-arrow-hover.svg);
-        }
+    .slick-prev:hover {
+        background-image: url(assets/img/icon-slick-arrow-hover.svg);
     }
 
     .slick-next:hover {

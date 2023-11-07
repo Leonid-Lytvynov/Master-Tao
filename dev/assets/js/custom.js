@@ -40,6 +40,36 @@ $(document).ready(function () {
          }
       });
    } // Mobile Only Slider
+
+
+   $('.delivery-slider').slick({
+      infinite: true,
+      slidesToShow: 3,
+      slidesToScroll: 1,
+      appendArrows: '.delivery-nav',
+      responsive: [
+         {
+            breakpoint: 1400,
+            settings: {
+               slidesToShow: 2,
+            }
+         },
+         {
+            breakpoint: 992,
+            settings: {
+               slidesToShow: 1,
+            }
+         },
+         {
+            breakpoint: 768,
+            settings: {
+               slidesToShow: 1,
+               arrows: false,
+               dots: true,
+            }
+         },
+      ]
+   });
 });
 
 const burger = document.querySelector('.hamburger');
