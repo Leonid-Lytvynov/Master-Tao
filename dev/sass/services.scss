@@ -1,0 +1,57 @@
+.service {
+   position: relative;
+   padding: 90px 50px 100px;
+
+   .tamplate-title {
+      margin-bottom: 56px;
+      padding-bottom: 12px;
+
+      &::after {
+         background-color: $color-primary;
+      }
+   }
+
+   .service-nav {
+      top: calc(50% - -55px);
+   }
+}
+
+.service-card {
+   padding: 0px 30px 32px;
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   display: flex;
+   flex-direction: column;
+   justify-content: flex-end;
+   min-height: 482px;
+   position: relative;
+
+   &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: linear-gradient(0deg, rgba(4, 5, 17, 0.91) 0%, rgba(88, 88, 88, 0.00) 100%);
+      z-index: 1;
+   }
+
+   .card-title {
+      margin-bottom: 12px;
+      z-index: 1;
+   }
+
+   .service-description {
+      font-size: 15px;
+      line-height: 124.5%;
+      margin-bottom: 16px;
+      z-index: 1;
+   }
+
+   .transparent-btn {
+      max-width: 153px;
+      z-index: 1;
+   }
+}

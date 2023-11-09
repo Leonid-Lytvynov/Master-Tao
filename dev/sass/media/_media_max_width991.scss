@@ -95,7 +95,7 @@
       .tamplate-title {
          margin-bottom: 55px;
 
-         .calculation-title {
+         h2 {
             max-width: 390px;
          }
       }
@@ -110,15 +110,18 @@
       }
    }
 
-   .advantages {
-      padding: 55px 0 68px;
-      margin-bottom: 53px;
-
-      &::before {
+   body {
+      .section-bg::before {
          left: 0;
          right: 0;
          border-radius: 0px;
       }
+   }
+
+
+   .advantages {
+      padding: 55px 0 68px;
+      margin-bottom: 53px;
 
       .tamplate-title {
          margin-bottom: 46px;
@@ -131,21 +134,44 @@
    }
 
    .delivery {
-      .delivery-slider {
-         max-width: 390px;
-      }
-
-      .slick-list {
-         margin-left: 15px;
-      }
-
       .tamplate-title {
          margin-bottom: 32px;
          padding-bottom: 16px;
       }
+   }
 
-      .delivery-nav {
+
+   .slider {
+      max-width: 390px;
+
+      .slide-card {
+         margin: 0 auto;
+      }
+   }
+
+   section {
+      .arrow-nav {
          max-width: 570px;
+      }
+   }
+
+   .service {
+      padding: 54px 0 100px;
+
+      .tamplate-title {
+         margin-bottom: 36px;
+         padding-bottom: 16px;
+      }
+
+      .slick-dots {
+         bottom: -41px;
+      }
+   }
+
+   .service-card {
+      .service-description {
+         margin-bottom: 7px;
+         font-size: 14px;
       }
    }
 }

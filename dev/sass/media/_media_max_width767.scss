@@ -45,20 +45,24 @@
       }
    }
 
-   .slide-card {
-      max-width: 335px;
+   .slider {
+      .slide-card {
+         max-width: 335px;
+
+         .card-title {
+            margin-bottom: 10px;
+         }
+      }
+   }
+
+   .delivery-card {
       padding: 0 23px 26px;
-      margin: 0px;
 
       .img-box {
          img {
             width: calc(100% + 46px);
             margin: 0 -23px 27px;
          }
-      }
-
-      .card-title {
-         margin-bottom: 10px;
       }
 
       .card-options {

@@ -1,12 +1,12 @@
 @media screen and (max-width: 1399px) {
-   .delivery {
-      .delivery-slider {
-         max-width: 780px;
-         margin: 0 auto;
-      }
-
-      .delivery-nav {
+   section {
+      .arrow-nav {
          max-width: 960px;
       }
+   }
+
+   .slider {
+      max-width: 780px;
+      margin: 0 auto;
    }
 }

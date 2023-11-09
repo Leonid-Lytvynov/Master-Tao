@@ -1,13 +1,8 @@
 .delivery {
    position: relative;
-   margin-bottom: 95px;
-
-   .delivery-slider {
-      position: relative;
-   }
+   margin-bottom: 101px;
 
    .tamplate-title {
-      text-align: center;
       padding-bottom: 13px;
       margin-bottom: 49px;
 
@@ -17,19 +12,14 @@
    }
 
    .delivery-nav {
-      max-width: 1370px;
       top: calc(50% + 57px);
    }
 }
 
-.slide-card {
+.delivery-card {
    padding: 0 20px 27px;
-   border-radius: 20px;
    background-color: #363A4D;
    box-shadow: 5px 15px 40px 0px rgba(30, 35, 66, 0.15);
-   max-width: 360px;
-   width: 100%;
-   overflow: hidden;
    text-align: center;
 
    .img-box {
@@ -39,13 +29,6 @@
          height: 229px;
          margin: 0 -20px 27px;
       }
-   }
-
-   .card-title {
-      font-size: 22px;
-      font-weight: 700;
-      line-height: 124.5%;
-      margin-bottom: 11px;
    }
 
    .card-options {

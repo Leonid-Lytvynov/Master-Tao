@@ -11,14 +11,16 @@
    }
 
    .calculation {
-      .calculation-title {
-         &::after {
-            content: "";
-            display: inline-block;
-            width: 85px;
-            height: 2px;
-            background-color: $color-secondary;
-            margin: 10px 20px;
+      .tamplate-title {
+         h2 {
+            &::after {
+               content: "";
+               display: inline-block;
+               width: 85px;
+               height: 2px;
+               background-color: $color-secondary;
+               margin: 10px 20px;
+            }
          }
       }
    }

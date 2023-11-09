@@ -162,6 +162,10 @@ body {
    background-image: url(assets/img/icon-slick-arrow-hover.svg);
 }
 
+.arrow-nav {
+   max-width: 1370px;
+}
+
 label {
    cursor: pointer;
 }
@@ -235,6 +239,7 @@ label:hover::before {
 
 .tamplate-title {
    position: relative;
+   text-align: center;
 
    h2 {
       font-size: 36px;
@@ -252,5 +257,31 @@ label:hover::before {
       left: 50%;
       top: calc(100% - 2px);
       transform: translate(-50%, 0);
+   }
+}
+
+.section-bg::before {
+   content: "";
+   position: absolute;
+   left: 42px;
+   right: 42px;
+   top: 0;
+   height: 100%;
+   border-radius: 20px;
+   background: #363A4D;
+   z-index: -1;
+}
+
+.slide-card {
+   max-width: 360px;
+   width: 100%;
+   border-radius: 20px;
+   overflow: hidden;
+
+   .card-title {
+      font-size: 22px;
+      font-weight: 700;
+      line-height: 124.5%;
+      margin-bottom: 11px;
    }
 }
