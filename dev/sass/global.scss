@@ -150,8 +150,12 @@ body {
    transform: rotate(180deg);
 }
 
-.slick-arrow {
-   background-image: url(assets/img/icon-slick-arrow.svg);
+.slick-next {
+   background-image: url(assets/img/icon-slick-arrow-right.svg);
+}
+
+.slick-prev {
+   background-image: url(assets/img/icon-slick-arrow-left.svg);
 }
 
 .slick-prev:hover {
@@ -162,8 +166,30 @@ body {
    background-image: url(assets/img/icon-slick-arrow-hover.svg);
 }
 
-.arrow-nav {
-   max-width: 1370px;
+.tamplate-slider {
+   .slick-arrow {
+      position: absolute;
+      top: 50%;
+      z-index: 5;
+      transform: translate(0, -50%);
+   }
+
+   .slick-prev {
+      left: -115px;
+
+      &:hover {
+         transform: translate(0, -50%) rotate(0deg);
+      }
+   }
+
+   .slick-next {
+      right: -115px;
+
+      &:hover {
+         transform: translate(0, -50%) rotate(180deg);
+      }
+   }
+
 }
 
 label {

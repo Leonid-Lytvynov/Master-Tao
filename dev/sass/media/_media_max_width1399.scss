@@ -1,12 +1,14 @@
 @media screen and (max-width: 1399px) {
-   section {
-      .arrow-nav {
-         max-width: 960px;
-      }
-   }
-
-   .slider {
+   .tamplate-slider {
       max-width: 780px;
       margin: 0 auto;
+
+      .slick-arrow.slick-next {
+         right: -90px;
+      }
+
+      .slick-arrow.slick-prev {
+         left: -90px;
+      }
    }
 }
