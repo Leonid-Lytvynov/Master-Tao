@@ -12,6 +12,8 @@
 
    .calculation {
       .tamplate-title {
+         text-align: left;
+
          h2 {
             &::after {
                content: "";

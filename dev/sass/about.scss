@@ -1,0 +1,32 @@
+.about {
+   .tamplate-title {
+      padding-bottom: 13px;
+      margin-bottom: 44px;
+   }
+
+   .img-box {
+      padding: 0 8px;
+
+
+      img {
+         max-width: 550px;
+         max-height: 581px;
+         width: 45vw;
+      }
+   }
+}
+
+.about-description {
+   padding: 0 13px;
+
+   p {
+      font-size: 18px;
+      font-weight: 300;
+      line-height: 170%;
+      margin-bottom: 24px;
+
+      span {
+         font-weight: 400;
+      }
+   }
+}

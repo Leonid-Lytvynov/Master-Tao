@@ -8,4 +8,19 @@
    .slide-card {
       margin: 0 15px;
    }
+
+   .about {
+      .tamplate-title {
+         text-align: left;
+
+         &::after {
+            background: $color-secondary;
+            left: 45px;
+         }
+      }
+
+      .img-box {
+         margin-top: -165px;
+      }
+   }
 }
