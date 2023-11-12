@@ -26,4 +26,21 @@
          }
       }
    }
+
+   .questions {
+      .questions-col-accordion {
+         max-width: 740px;
+
+         .accordion-item {
+            width: 100%;
+         }
+      }
+
+      .questions-form {
+         .questions-form__description {
+            max-width: 305px;
+            font-weight: 400;
+         }
+      }
+   }
 }

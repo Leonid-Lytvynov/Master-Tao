@@ -22,6 +22,37 @@ body {
    position: relative;
 }
 
+.tamplate-title {
+   position: relative;
+   text-align: center;
+
+   h2 {
+      font-size: 36px;
+      font-weight: 700;
+      line-height: 124.5%;
+      text-transform: uppercase;
+   }
+
+   &::after {
+      content: "";
+      display: inline-block;
+      width: 85px;
+      height: 2px;
+      position: absolute;
+      left: 50%;
+      top: calc(100% - 2px);
+      transform: translate(-50%, 0);
+   }
+}
+
+.title-primary::after {
+   background-color: $color-primary;
+}
+
+.title-secondary::after {
+   background-color: $color-secondary;
+}
+
 .btn-primary {
    background-color: $color-primary;
    border-color: $color-primary;
@@ -192,26 +223,42 @@ body {
 
 }
 
+form {
+   background-color: #363A4D;
+}
+
 label {
    cursor: pointer;
 }
 
 input {
    border: none;
+   transition: .3s;
 }
 
 input:focus-visible {
    outline: none;
 }
 
+textarea {
+   transition: .3s;
+   border: none;
+   resize: none;
+}
 
+textarea:focus-visible {
+   outline: none;
+}
 
-input:hover {
+input:hover,
+textarea:hover {
    box-shadow: 0 0 4px 2px orange;
 }
 
 input:focus-visible,
-input:focus {
+input:focus,
+textarea:focus,
+textarea:focus-visible {
    box-shadow: 0 0 4px 2px $color-secondary;
 }
 
@@ -263,26 +310,67 @@ label:hover::before {
    border: 1px solid orange;
 }
 
-.tamplate-title {
-   position: relative;
-   text-align: center;
+.input-column {
+   display: flex;
+   flex-direction: column;
+   width: 100%;
 
-   h2 {
-      font-size: 36px;
-      font-weight: 700;
-      line-height: 124.5%;
-      text-transform: uppercase;
-   }
+   .input-box {
+      display: flex;
+      flex-direction: column;
+      margin: 0 15px 20px;
 
-   &::after {
-      content: "";
-      display: inline-block;
-      width: 85px;
-      height: 2px;
-      position: absolute;
-      left: 50%;
-      top: calc(100% - 2px);
-      transform: translate(-50%, 0);
+      label {
+         font-size: 15px;
+         font-weight: 600;
+         line-height: 126%;
+         margin-bottom: 6px;
+      }
+
+      input {
+         padding: 19px 20px;
+         font-size: 15px;
+         line-height: 126%;
+         border-radius: 10px;
+         background: #FFF;
+
+         &::placeholder {
+            color: #CBCBCB;
+         }
+      }
+
+      textarea {
+         font-size: 15px;
+         line-height: 126%;
+
+         padding: 16px 20px;
+         border-radius: 10px;
+
+         &::placeholder {
+            color: #CBCBCB;
+         }
+      }
+
+      [for="fileInput"] {
+         padding: 11px 20px;
+         font-weight: 400;
+         background-color: transparent;
+         border-radius: 10px;
+         border: 1px dashed rgba(255, 255, 255, 0.26);
+         text-align: center;
+         margin-bottom: 6px;
+         cursor: pointer;
+         transition: 0.3s;
+
+         &:hover {
+            border: 1px dashed $color-secondary;
+            color: $color-secondary;
+         }
+      }
+
+      [type="file"] {
+         display: none;
+      }
    }
 }
 
@@ -309,5 +397,75 @@ label:hover::before {
       font-weight: 700;
       line-height: 124.5%;
       margin-bottom: 11px;
+   }
+}
+
+.accordion-flush {
+
+   .accordion-item:first-child,
+   .accordion-item:last-child,
+   .accordion-item {
+      margin-bottom: 17px;
+      border: 1px solid #3A444E;
+      border-radius: 10px;
+      overflow: hidden;
+      background-color: transparent;
+
+      .accordion-button {
+         padding: 17px 34px;
+         padding-right: 18px;
+         color: #fff;
+         font-size: 18px;
+         font-weight: 700;
+         line-height: 124.5%;
+         background-color: transparent;
+
+         &:focus {
+            border: none;
+            outline: 0;
+            box-shadow: none;
+         }
+
+         &::after {
+            width: 27px;
+            height: 27px;
+            background-image: url(./assets/img/icon-accordion.svg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain;
+            transition: .5s;
+         }
+      }
+
+      .accordion-button:not(.collapsed) {
+         color: #282B38;
+         background-color: #fff;
+         border: none;
+         box-shadow: none;
+
+         &::after {
+            background-image: url(./assets/img/icon-accordion-show.svg);
+            transform: rotate(360deg);
+         }
+      }
+
+      .accordion-body {
+         color: #282B38;
+         background-color: #fff;
+         font-size: 17px;
+         font-weight: 300;
+         line-height: 144.5%;
+         padding: 0 34px 20px;
+         margin-top: -5px;
+
+         p {
+            max-width: 583px;
+            margin-bottom: 0;
+         }
+      }
+   }
+
+   .accordion-item:last-child {
+      margin-bottom: 0px;
    }
 }

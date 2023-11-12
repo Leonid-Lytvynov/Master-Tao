@@ -110,15 +110,6 @@
       }
    }
 
-   body {
-      .section-bg::before {
-         left: 0;
-         right: 0;
-         border-radius: 0px;
-      }
-   }
-
-
    .advantages {
       padding: 55px 0 68px;
       margin-bottom: 53px;
@@ -145,13 +136,6 @@
       max-width: 390px;
    }
 
-   body {
-      .slide-card {
-         margin: 0 auto;
-      }
-   }
-
-
    .service {
       padding: 54px 0 100px;
       margin-bottom: 54px;
@@ -174,6 +158,8 @@
    }
 
    .about {
+      margin-bottom: 45px;
+
       .tamplate-title {
          padding-bottom: 16px;
          margin-bottom: 26px;
@@ -184,7 +170,6 @@
       }
 
       .img-box {
-         margin-top: 0;
          display: flex;
          justify-content: center;
 
@@ -209,6 +194,61 @@
             font-size: 16px;
             line-height: 149.5%;
          }
+      }
+   }
+
+   .questions {
+      margin-bottom: 60px;
+
+      .tamplate-title {
+         margin-bottom: 27px;
+         padding-bottom: 18px;
+      }
+
+      .row {
+         gap: 14px;
+      }
+
+      .questions-form {
+         margin: 0 auto;
+         padding: 38px 20px;
+      }
+   }
+
+   body {
+      .section-bg::before {
+         left: 0;
+         right: 0;
+         border-radius: 0px;
+      }
+
+      .slide-card {
+         margin: 0 auto;
+      }
+
+      .accordion-flush {
+
+         .accordion-item:first-child,
+         .accordion-item:last-child,
+         .accordion-item {
+            margin: 0 auto 14px;
+
+            .accordion-button {
+               min-height: 64px;
+               font-size: 16px;
+               padding: 11px 22px;
+            }
+
+            .accordion-body {
+               padding: 0 22px 11px;
+               line-height: 20.23px;
+
+               p {
+                  font-size: 14px;
+               }
+            }
+         }
+
       }
    }
 }

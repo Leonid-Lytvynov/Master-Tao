@@ -6,10 +6,6 @@
    .tamplate-title {
       margin-bottom: 56px;
       padding-bottom: 12px;
-
-      &::after {
-         background-color: $color-primary;
-      }
    }
 
    .service-nav {

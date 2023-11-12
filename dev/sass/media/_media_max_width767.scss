@@ -10,7 +10,7 @@
       }
 
       .calculation-row {
-         flex-direction: column;
+         flex-wrap: wrap;
 
          .calculation-column__margin {
             margin-bottom: -8px;
@@ -28,7 +28,9 @@
          }
       }
 
-      .btn {
+      .calculation-btn {
+         width: 100%;
+
          .icon {
             margin-left: auto;
          }

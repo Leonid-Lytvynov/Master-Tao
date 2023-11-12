@@ -14,7 +14,6 @@
          text-align: left;
 
          &::after {
-            background: $color-secondary;
             left: 45px;
          }
       }
@@ -22,5 +21,20 @@
       .img-box {
          margin-top: -165px;
       }
+   }
+
+   .questions {
+      .row {
+         justify-content: center;
+      }
+
+      .questions-col-accordion {
+         max-width: 545px;
+      }
+
+      .questions-col-form {
+         max-width: 414px;
+      }
+
    }
 }
