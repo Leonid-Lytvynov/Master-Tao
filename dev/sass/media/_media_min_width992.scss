@@ -35,6 +35,16 @@
       .questions-col-form {
          max-width: 414px;
       }
+   }
 
+   .accordion-flush {
+
+      .accordion-item:first-child,
+      .accordion-item:last-child,
+      .accordion-item {
+         .accordion-body {
+            margin-top: -5px;
+         }
+      }
    }
 }
