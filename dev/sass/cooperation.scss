@@ -1,0 +1,67 @@
+.cooperation {
+   position: relative;
+
+   .template-title {
+      margin-bottom: 87px;
+      padding-bottom: 17px;
+
+      h2 {
+         margin-bottom: 6px;
+      }
+   }
+
+   .row {
+      margin-bottom: 49px;
+
+      &:last-child {
+         margin-bottom: 0px;
+      }
+
+      li:last-child {
+         margin-bottom: 0;
+      }
+   }
+
+   .cooperation-list {
+      max-width: 528px;
+      padding: 0;
+      margin-bottom: 0px;
+
+      li {
+         font-size: 17px;
+         font-weight: 300;
+         line-height: 156.5%;
+         margin-bottom: 28px;
+         list-style-position: inside;
+
+         &::first-letter {
+            margin-left: -12px;
+         }
+      }
+   }
+
+   .second-list {
+      max-width: 520px;
+      margin-bottom: 42px;
+   }
+
+   .cooperation-btn {
+      padding: 20px 33px;
+      max-width: 243px;
+
+      img {
+         margin: 0 -14px 0 45px;
+      }
+   }
+
+   .img-box {
+      display: flex;
+      justify-content: center;
+
+      img {
+         max-height: 406px;
+         // object-fit: contain;
+         object-position: center;
+      }
+   }
+}

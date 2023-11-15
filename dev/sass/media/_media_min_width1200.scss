@@ -11,7 +11,7 @@
    }
 
    .calculation {
-      .tamplate-title {
+      .template-title {
          text-align: left;
 
          h2 {
@@ -23,6 +23,10 @@
                background-color: $color-secondary;
                margin: 10px 20px;
             }
+         }
+
+         &::after {
+            display: none;
          }
       }
    }

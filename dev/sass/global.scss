@@ -22,15 +22,50 @@ body {
    position: relative;
 }
 
-.tamplate-title {
+section {
+   &:last-of-type {
+      margin-bottom: 56px;
+   }
+
+   &:nth-child(even) {
+      .template-title::after {
+         background-color: #E58D35;
+      }
+   }
+
+   &.container-fluid {
+      padding: 90px 85px 100px;
+
+      &::before {
+         content: "";
+         position: absolute;
+         left: 42px;
+         right: 42px;
+         top: 0;
+         height: 100%;
+         border-radius: 20px;
+         background: #363A4D;
+         z-index: -1;
+      }
+   }
+}
+
+
+.template-title {
    position: relative;
    text-align: center;
+   padding-bottom: 13px;
 
    h2 {
       font-size: 36px;
       font-weight: 700;
       line-height: 124.5%;
       text-transform: uppercase;
+   }
+
+   h4 {
+      font-size: 24px;
+      line-height: 124.5%;
    }
 
    &::after {
@@ -42,16 +77,10 @@ body {
       left: 50%;
       top: calc(100% - 2px);
       transform: translate(-50%, 0);
+      background-color: #89C249;
    }
 }
 
-.title-primary::after {
-   background-color: $color-primary;
-}
-
-.title-secondary::after {
-   background-color: $color-secondary;
-}
 
 .btn-primary {
    background-color: $color-primary;
@@ -123,6 +152,7 @@ body {
    align-items: center;
    position: absolute;
    left: 50%;
+   bottom: 0;
    transform: translate(-50%, 0);
 
    li {
@@ -197,7 +227,7 @@ body {
    background-image: url(assets/img/icon-slick-arrow-hover.svg);
 }
 
-.tamplate-slider {
+.template-slider {
    .slick-arrow {
       position: absolute;
       top: 50%;
@@ -372,18 +402,6 @@ label:hover::before {
          display: none;
       }
    }
-}
-
-.section-bg::before {
-   content: "";
-   position: absolute;
-   left: 42px;
-   right: 42px;
-   top: 0;
-   height: 100%;
-   border-radius: 20px;
-   background: #363A4D;
-   z-index: -1;
 }
 
 .slide-card {

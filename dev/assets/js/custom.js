@@ -42,7 +42,7 @@ $(document).ready(function () {
    } // Mobile Only Slider
 
 
-   $('.tamplate-slider').slick({
+   $('.template-slider').slick({
       infinite: true,
       slidesToShow: 3,
       slidesToScroll: 1,
