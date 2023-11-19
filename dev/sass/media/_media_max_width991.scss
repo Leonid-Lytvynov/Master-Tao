@@ -20,7 +20,7 @@
                margin-bottom: 18px;
 
                svg {
-                  width: 100%;
+                  max-width: 100%;
                   height: auto;
                }
             }
@@ -106,6 +106,10 @@
                }
             }
 
+         }
+
+         &:last-of-type {
+            margin-bottom: 54px;
          }
       }
    }
@@ -307,7 +311,7 @@
                margin-bottom: 24px;
 
                &::first-letter {
-                  margin-left: -15px;
+                  margin-left: -12px;
                }
             }
          }
@@ -325,6 +329,30 @@
          img {
             margin-left: auto;
          }
+      }
+   }
+
+   footer {
+      padding-bottom: 44px;
+
+      .row {
+         justify-content: center;
+      }
+
+      .footer-contact {
+         text-align: center;
+
+         .logo-box {
+            margin-bottom: 30px;
+         }
+
+         .nav-social {
+            justify-content: center;
+         }
+      }
+
+      .footer-links {
+         display: none;
       }
    }
 }
